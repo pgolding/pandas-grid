@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from .context import grid
+from .context import griddy
 
 import unittest
 
@@ -9,7 +9,7 @@ class AdvancedTestSuite(unittest.TestCase):
     """Advanced test cases."""
 
     def test_thoughts(self):
-        self.assertIsNone(grid.hmm())
+        self.assertIsNone(griddy.hmm())
 
 
 if __name__ == '__main__':

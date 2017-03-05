@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+<div class="container">
+    {% if doc_header %}
+    <div class="row">
+        <div class="col-12">
+        {{ doc_header}}
+        </div>
+    </div>
+    {% endif %}
+    {% if headings %}
+    <div class="row">
+        {% for header in headings %}
+        <div class="{{col_css[loop.index-1]}}">
+                <h4>{{header}}</h4>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+    {% for row in table %}
+    <div class="row">
+        {% for col in row %}
+        <div class="{{col_css[loop.index-1]}}">
+            {% if loop.index in img_cols %}
+                <img src="{{col}}">
+            {% else %}
+                {{col}}
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>
+
+</div> <!-- container -->
+</body>
+</html>

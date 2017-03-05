@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from .context import grid
+from .context import griddy
 
 import unittest
 
