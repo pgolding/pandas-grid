@@ -32,9 +32,11 @@ render_table(table_data: pd.DataFrame, headings: str =[], filename='griddy.html'
 
 #### Filename ####
 
-As you can see, 'griddy.html' is just a default filename. Most likely you will override it with your own more meaningful filename. I tend to automate this when running a set of experiments so that I end up with a succession of HTML files that I can review. My preferred pattern is something like: ```lab_experiment_num.html``` where ```lab``` is the name of my current set of experiments and ```experiment``` is the particular experiment with ```num``` representing the iteration - e.g. stemming_porter_01.html etc.
+As you can see, 'griddy.html' is just a default filename. Most likely you will override it with your own more meaningful filename. I tend to automate this when running a set of experiments so that I end up with a succession of HTML files that I can review. 
 
-Note that the file name (minus the extension) is used as the <title> tag for the HTML.
+My preferred pattern is something like: ```lab_experiment_num.html``` where ```lab``` is the name of my current set of experiments and ```experiment``` is the particular experiment with ```num``` representing the iteration - e.g. ```stemming_porter_01.html etc.```
+
+Note that the file name (minus the extension) is used as the ```<title>``` tag for the HTML.
 
 #### headings ####
 
