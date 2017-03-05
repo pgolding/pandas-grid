@@ -8,7 +8,7 @@ Hence I created Griddy, which is a very simple "helper" function to render a Pan
  
  >pip install griddy
  
- ### How to Use ###
+### How to Use ###
  
 Griddy is primarily designed to be used with a Jupyter Notebook, but can also be referenced from any Python program.
 
