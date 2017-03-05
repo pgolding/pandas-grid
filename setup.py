@@ -29,6 +29,8 @@ setup(
     install_requires=[
         'jinja2',
         'pandas'
-    ]
+    ],
+    test_suite='nose.collector',
+    tests_require=['nose']
 )
 

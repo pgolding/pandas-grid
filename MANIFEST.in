@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+include griddy/resources/grid.html
+include griddy/resources/grid.css
