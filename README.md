@@ -30,6 +30,8 @@ render_table(table_data: pd.DataFrame, headings: str =[], filename='griddy.html'
                  annotation='', show=False, css: str = []):
 ```
 
+Note that ```render_table``` returns the full pathname for the rendered HTML. This can be useful for logging a series of HTML links for a particular run of data experiments.
+
 ### Parameters ###
 
 #### Filename ####
@@ -70,12 +72,21 @@ By default, the script figures out how many columns are in the data frame and ad
 
 ```Python
 css = ['col-6', 'col-3', 'col-3']
+```
 
 see [Simple Grid](http://www.simplegrid.io/) for more details about the grid layout styling scheme.
 
+Note that the ```grid.css``` file contains styling for bold text that I added in order to enable simply highlighting of text inside of text fields via the bold tag ```<b>highlighted_text</b>```
 
+### Things To Do ###
 
- 
+This is a very rudimentary rendering helper that I found useful enough for quick and elegant rendering of data frames to HTML (via Jinja2 templating). There are lots of ways to improve/extend it. For example, image-tag rendering of a cell could be extended to render multiple images in a single cell. 
+
+If you want to extend it, please feel free. The Jinja2 template and associated CSS are stored in the griddy/resources folder.
+
+I have also written a help library to enable automated evaluation of various textual search methods in a data frame. For example, when trying to find particular records in a frame of data (e.g. product data) I want to experiment with various string search methods, such as stemming, lemmatization, synonyms and more advanced techniques (as if designing a search algorithm).
+
+If I get time to make it presentable, I might open source it too as it works well with Griddy.
  
  
 
