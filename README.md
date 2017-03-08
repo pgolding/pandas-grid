@@ -50,7 +50,7 @@ This enables you to give column headings to the grid:
 headings = ['Text', 'Tags', 'URL']
 ```
 
-Prepending any of the columng headings with ```<img>``` will cause the renderer to assume that the contents of that column is image URLs and will therefore wrap them with an image tage: ```<img href='contents'>``` tag. 
+Prepending any of the columng headings with ```<img>``` will cause the renderer to assume that the contents of that column is image URLs and will therefore wrap them with an image tag: ```<img href='contents'>```. 
 
 ```Python
 headings = ['Text', 'Tags', '<img>URL']
