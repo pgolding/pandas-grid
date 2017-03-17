@@ -63,6 +63,11 @@ b, strong {
   color: #ff2c47;
 }
 
+/* Added by Paul Golding to mimic Elasticsearch-Kibana highlighting */
+em {
+    background-color: #f39c12;
+}
+
 .font-light {
   font-weight: 300;
 }

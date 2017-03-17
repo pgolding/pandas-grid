@@ -8,6 +8,12 @@ Hence I created Griddy, which is a very simple "helper" function to render a Pan
  
  Installation is easy:
  
+> `$pip install .`
+
+To install for all users on the system
+
+> `pip install -e .`
+
  ```$ pip install griddy```
  
 ### How to Use ###
